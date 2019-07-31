@@ -30,5 +30,5 @@ Thereafter, the best features were isolated, and multivariate modelling was perf
 
 It was determined that:
 
-1. **predictive modelling should be performed using the 4 or 5 best features** (the 5 best being, in order of best to worst, `['engine-size', 'width', 'horsepower', 'highway-mpg', 'curb-weight']`.
+1. **Predictive modelling should be performed using the 4 or 5 best features** (the 5 best being, in order of best to worst, `['engine-size', 'width', 'horsepower', 'highway-mpg', 'curb-weight']`.
 2. A **k-value of 3 or less** should be used to minimize the root mean squared error value.
