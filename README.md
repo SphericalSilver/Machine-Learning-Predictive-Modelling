@@ -1,7 +1,7 @@
 # Machine-Learning-Predictive-Modelling
 List of various Machine Learning algorithms used in projects. 
 
-## 1) Predicting Car Prices using k nearest neighbors algorithm
+## 1) [Predicting Car Prices using k nearest neighbors algorithm](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/k%20nearest%20neighbors%20car%20price%20prediction.ipynb)
 
 The dataset used was found [here](https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data).
 
