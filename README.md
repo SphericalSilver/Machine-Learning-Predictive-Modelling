@@ -44,7 +44,7 @@ Feature Engineering, Feature Selection, and K-Fold cross validation were used on
 - Any column with more than 15% missing values was dropped.
 - For text columns in particular, we dropped cols with any missing values at all.
 - For numeric columns, we imputed missing values as the average of that column.
-- Created new features based on existing columns
+- Created new features based on existing columns, such as no. of years until a house was sold.
 - Dropped columns that weren't useful, or which leaked data on the sale.
 
 ### Feature Selection
