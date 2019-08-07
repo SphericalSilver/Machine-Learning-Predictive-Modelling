@@ -37,6 +37,8 @@ It was determined that:
 
 The dataset can be found [here](https://dsserver-prod-resources-1.s3.amazonaws.com/235/AmesHousing.txt). This dataset was originally compiled by Dean De Cock for the primary purpose of having a high quality dataset for regression.
 
+A pipeline of functions was set up to allow us to quickly iterate on different models, consisting of the `transform_features`, `select_features`, and `train_and_test` functions.
+
 Feature Engineering, Feature Selection, and K-Fold cross validation were used on the original data-set to predict the price of houses in the city of Ames, Iowa, United States.
 
 ### Feature Engineering
