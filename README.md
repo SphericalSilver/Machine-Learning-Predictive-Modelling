@@ -32,3 +32,24 @@ It was determined that:
 
 1. **Predictive modelling should be performed using the 4 or 5 best features** (the 5 best being, in order of best to worst, `['engine-size', 'width', 'horsepower', 'highway-mpg', 'curb-weight']`.
 2. A **k-value of 3 or less** should be used to minimize the root mean squared error value.
+
+## 2) [Predicting House Prices using Linear Regression](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Linear%2BRegression%2B-%2BPredicting%2BHouse%2BPrices.ipynb)
+
+The dataset can be found [here](https://dsserver-prod-resources-1.s3.amazonaws.com/235/AmesHousing.txt). This dataset was originally compiled by Dean De Cock for the primary purpose of having a high quality dataset for regression.
+
+Feature Engineering, Feature Selection, and K-Fold cross validation were used on the original data-set to predict the price of houses in the city of Ames, Iowa, United States.
+
+### Feature Engineering
+ 
+- Any column with more than 15% missing values was dropped.
+- For text columns in particular, we dropped cols with any missing values at all.
+- For numeric columns, we imputed missing values as the average of that column.
+- Created new features based on existing columns
+- Dropped columns that weren't useful, or which leaked data on the sale.
+
+### Feature Selection
+
+- Identified numeric columns that correlated strongly with target columns, and selected those with strong correlations (> 0.4)
+- Converted any remaining nominal features to categorical type.
+- Generated Heatmap to identify collinearity between columns. 
+![heatmap](https://i.gyazo.com/ad9c4e6e5fae91633fe67646ec689aaf.png)
