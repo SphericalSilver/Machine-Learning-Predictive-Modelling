@@ -53,3 +53,11 @@ Feature Engineering, Feature Selection, and K-Fold cross validation were used on
 - Converted any remaining nominal features to categorical type.
 - Generated Heatmap to identify collinearity between columns. 
 ![heatmap](https://i.gyazo.com/ad9c4e6e5fae91633fe67646ec689aaf.png)
+
+### K-Fold Cross Validation
+
+The `train_and_test` function was modified to accept a parameter k which controlled the type of cross validation that occured:
+
+1. When k = 0 , holdout validation will be performed, which is what the function already does.
+2. When k is 1, simple cross validation is performed, and then the rmse will be returned.
+3. When k > 1, k-fold cross validation will be performed using k number of folds.
