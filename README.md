@@ -63,3 +63,30 @@ The `train_and_test` function was modified to accept a parameter k which control
 1. When k = 0 , holdout validation was be performed, which is what the function did by default.
 2. When k = 1, simple cross validation (first time with train and test sets, second time with them swapped) was performed, and then the avg rmse was returned.
 3. When k > 1, k-fold cross validation was performed using k number of folds.
+
+
+## 3) [Stock Markey Prediction (S&P500 Index)](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Stock%20Markey%20Prediction%20(S%26P500%20Index).ipynb)
+
+In this project, we worked with the `sphist.csv` file (provided in this repository) containing index prices. 
+
+### Overview
+
+Each row in the file contains a daily record of the price of the [S&P500 Index](https://en.wikipedia.org/wiki/S%26P_500_Index) from 1950 to 2015. The model was be trained on data from 1950-2012, and then used to make predictions for 2013-2015. Feature engineering was carefully applied to reflect that stock market prices were not independent occurrences (because they're influenced by the stock prices from the recent days), and new features were added that accounted for this.
+
+In the end, after some experimentation, we managed to produce a predictive model, using linear regression, with a relatively low RMSE of 22.18.
+
+### Future Improvements
+Some future improvements could be:
+
+1. Including even more indicators, like day of the week, no. of holidays in the previous month, etc. 
+2. Making Predictions only up to a week, or even only a day in advance. 
+    - For instance, data from 2014-05-20 and earlier could be used to predict prices on 2014-05-21.
+    - This more closely resembles how people actually do stock market prediction using algorithms.
+3. Using different algorithms, like a random forest, and seeing if they perform better.
+4. Inclusion of data external to the provided dataset. For instance, we could look at things like:
+    - The weather in cities where most trading happens
+    - The amount of twitter activity surrounding a certain stock
+    - Sentiment Analysis of a certain stock, using for instance Twitter data.
+5. Making the system real-time by writing an automated script to download the latest data when the market closes, and then using that to make predictions for the next day.
+
+
