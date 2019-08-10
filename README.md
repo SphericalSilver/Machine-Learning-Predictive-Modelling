@@ -90,3 +90,10 @@ Some future improvements could be:
 5. Making the system real-time by writing an automated script to download the latest data when the market closes, and then using that to make predictions for the next day.
 
 
+## 4) [Decision Tree and Random Forest Regression - Predicting Bike Rentals](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Bike%2BRental%2BPredictions.ipynb)
+
+### Overview
+
+Information on Bike Rentals from a dataset found [here](http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset) were analyzed to predict the number of bikes that would be rented in each hour.
+
+Various predictive algorithms were used, such as Linear Regression, Decision Tree Regression, and Random Forest Regression. In the end, we discovered that the Random Forest Regressor algorithm unsurprisingly created the model with the best predictive accuracy. Linear Regression on the other hand did not fare well because it wasn't able to accurately model the few non-linear features that were in the dataset. 
