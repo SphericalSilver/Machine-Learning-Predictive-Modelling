@@ -65,7 +65,7 @@ The `train_and_test` function was modified to accept a parameter k which control
 3. When k > 1, k-fold cross validation was performed using k number of folds.
 
 
-## 3) Linear Regression - [Stock Market Prediction (S&P500 Index)](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Stock%20Market%20Prediction%20(S%26P500%20Index).ipynb)
+## 3) [Linear Regression - Stock Market Prediction (S&P500 Index)](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Stock%20Market%20Prediction%20(S%26P500%20Index).ipynb)
 
 In this project, we worked with the `sphist.txt` file (provided in this repository) containing index prices. 
 
