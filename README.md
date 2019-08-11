@@ -97,3 +97,23 @@ Some future improvements could be:
 Information on Bike Rentals from a dataset found [here](http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset) were analyzed to predict the number of bikes that would be rented in each hour.
 
 Various predictive algorithms were used, such as Linear Regression, Decision Tree Regression, and Random Forest Regression. In the end, we discovered that the Random Forest Regressor algorithm unsurprisingly created the model with the best predictive accuracy. Linear Regression on the other hand did not fare well because it wasn't able to accurately model the few non-linear features that were in the dataset. 
+
+## 4) [Classifying Hand-written Numbers using Deep Neural Networks](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Classifying%2BHandwritten%2BDigits.ipynb)
+
+### Overview
+
+The `load_digits()` function from the scikit-learn library (accessible within the namespace of `sklearn.datasets`) was used to retrieve a copy of [hand-written digits from the UCI machine learning repository](http://archive.ics.uci.edu/ml/datasets/Optical+Recognition+of+Handwritten+Digitshttp://archive.ics.uci.edu/ml/datasets/Optical+Recognition+of+Handwritten+Digits).
+
+After being retrieved, the data was then reshaped, and some of it was visualized to understand what we were working with.
+
+![digits](https://i.gyazo.com/2397eb1f8d9d6f2b50c1fb0ed5b87353.png)
+
+Thereafter, Machine Learning algorithms were used to attempt to classify the digits above.
+
+1. K Nearest Neighbor algorithm was initially used to get a benchmark value for accuracy (measured using simple accuracy, i.e. correct predictions/total predictions)
+    - Unlike the linear and logistic regression models, the K-nearest neighbours algorithm makes no assumption about linearity between features and the output labels. This allows it to capture nonlinearity in the data. 
+2. Afterwards, deep neural networks were used.
+    - Deep learning tends to be effective in image classification because of the fact that its models can learn hierarchical representations. An effective deep learning model learns intermediate representations at each layer in the model, and then uses them in the prediction process. Each successive layer uses weights from previous layers to try and learn more complex representations.
+    - Various parameters, like the number of neurons, and number of hidden layers were tuned to see how it would improve accuracy.
+    - As the no. of hidden layers increased, we increased the amount of folds used in k-fold cross validation to minimize over-fitting. 
+    - Using 3 hidden layers with over 250 neurons resulted in very high accuracy rates of over 96%, which is cohesive with research literature about using deep neural networks for computer "vision", such as the digits classification we attempted here. 
