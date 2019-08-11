@@ -98,7 +98,7 @@ Information on Bike Rentals from a dataset found [here](http://archive.ics.uci.e
 
 Various predictive algorithms were used, such as Linear Regression, Decision Tree Regression, and Random Forest Regression. In the end, we discovered that the Random Forest Regressor algorithm unsurprisingly created the model with the best predictive accuracy. Linear Regression on the other hand did not fare well because it wasn't able to accurately model the few non-linear features that were in the dataset. 
 
-## 4) [Classifying Hand-written Numbers using Deep Neural Networks](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Classifying%2BHandwritten%2BDigits.ipynb)
+## 5) [Classifying Hand-written Numbers using Deep Neural Networks](https://github.com/SphericalSilver/Machine-Learning-Predictive-Modelling/blob/master/Classifying%2BHandwritten%2BDigits.ipynb)
 
 ### Overview
 
