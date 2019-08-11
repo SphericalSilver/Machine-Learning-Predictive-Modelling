@@ -115,5 +115,5 @@ Thereafter, Machine Learning algorithms were used to attempt to classify the dig
 2. Afterwards, deep neural networks were used.
     - Deep learning tends to be effective in image classification because of the fact that its models can learn hierarchical representations. An effective deep learning model learns intermediate representations at each layer in the model, and then uses them in the prediction process. Each successive layer uses weights from previous layers to try and learn more complex representations.
     - Various parameters, like the number of neurons, and number of hidden layers were tuned to see how it would improve accuracy.
-    - As the no. of hidden layers increased, we increased the amount of folds used in k-fold cross validation to minimize over-fitting. 
+    - As the no. of hidden layers increased, we increased the amount of folds used in k-fold cross validation to minimize over-fitting. This was to get around the fact that increasing the number of hidden layers generally results in an increase in the model's overfitting.
     - Using 3 hidden layers with over 250 neurons resulted in very high accuracy rates of over 96%, which is cohesive with research literature about using deep neural networks for computer "vision", such as the digits classification we attempted here. 
